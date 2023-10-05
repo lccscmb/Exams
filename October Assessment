@@ -1,0 +1,21 @@
+def fibonacci(n):
+    if n <= 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
+
+ans=fibonacci(7)
+print(ans)
+
+
+
+def reverseString(s):
+    if len(s) <=1:
+        return s #"s" here stands for the word or letter you are using
+    else:
+        return reverseString(s[1:]) + s[0]
+    
+ans = reverseString("so")
+print(ans)
